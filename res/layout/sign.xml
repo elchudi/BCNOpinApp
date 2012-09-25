@@ -13,11 +13,14 @@
         android:orientation="vertical"
         android:layout_width="0dip"
         android:layout_weight="1"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:onClick="viewSignPetitionMessage"
+        >
         <TextView
             android:id="@+id/toptext"
             android:layout_width="fill_parent"
             android:layout_height="0dip"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:gravity="center_vertical"
         />
@@ -26,8 +29,17 @@
             android:layout_height="0dip"
             android:layout_weight="1"
             android:id="@+id/bottomtext"
-            android:singleLine="true"
-            android:ellipsize="marquee"
+            android:singleLine="false"
+            
         />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:id="@+id/amount"
+            android:singleLine="true"
+            
+        />
+        
     </LinearLayout>
 </LinearLayout>

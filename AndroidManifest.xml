@@ -32,6 +32,12 @@
         
     </activity>
     <activity
+        android:name=".SignViewActivity"
+        android:label="@string/title_activity_sign"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+    </activity>
+    <activity
         android:name=".NewSignPetitionActivity"
         android:label="@string/title_activity_sign"
         android:theme="@android:style/Theme.NoTitleBar" >

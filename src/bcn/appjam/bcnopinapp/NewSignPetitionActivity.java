@@ -1,13 +1,19 @@
 package bcn.appjam.bcnopinapp;
 
-import android.os.Bundle;
+import bcn.appjam.bcnopinapp.beans.PetitionsStatic;
+import bcn.appjam.bcnopinapp.beans.SignPetition;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class NewSignPetitionActivity extends Activity {
 
+//	public final static String NAME_MESSAGE = "com.example.myfirstapp.MESSAGE";
+//	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+//	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +25,25 @@ public class NewSignPetitionActivity extends Activity {
     	
     	
     	Intent intent = new Intent(this, SignActivity.class);
-    	startActivity(intent);
+        EditText editText = (EditText) findViewById(R.id.name);
+        String name = editText.getText().toString();
+        
+        EditText editText2 = (EditText) findViewById(R.id.desc);
+        String desc = editText2.getText().toString();
+        
+        EditText editText3 = (EditText) findViewById(R.id.amount);
+        String amount = editText3.getText().toString();
+        
+        
+        SignPetition  petition = new SignPetition();
+        petition.name = name;
+        petition.desc = desc;
+        petition.signature_target_amout = Integer.parseInt(amount);
+        PetitionsStatic.petitions.add(petition);
+        
+        
+        startActivity(intent);
+    	
     }
 
 
