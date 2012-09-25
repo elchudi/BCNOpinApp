@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">BCNOpinApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_sign">Hello Sign!!!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="display_activity_main">DisplayActivity</string>
+    <string name="title_activity_sign">SignActivity</string>
+
+</resources>

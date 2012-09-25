@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#67CFE3"
+     
+      >
+     <LinearLayout 
+        android:weightSum="1.0" android:id="@+id/relativeLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundstate"
+            android:onClick="signMessage"
+            android:src="@drawable/boton_recull" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recull"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundstate"
+                android:onClick="opinaMessage"
+                android:src="@drawable/boton_opina" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opina"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgroundstate"
+                    android:onClick="participaMessage"
+                    android:src="@drawable/boton_participa" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Participa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/relativeLayout"
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/logoinicio" />
+                
+    </RelativeLayout>
+
+</RelativeLayout>
